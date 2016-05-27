@@ -56,7 +56,7 @@ knex.ensureSchema = function () {
           table.integer('rest_id');
           table.foreign('user_id').references('users.user_id');
           table.foreign('rest_id').references('restaurants.rest_id');
-          table.string('category');
+          table.boolien('reviewed');
         }).then(function (table) {
           console.log("created buckets table")
         })
